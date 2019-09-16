@@ -16,8 +16,8 @@ export default class Reminder extends PureComponent {
         };
     }
 
-    handleDateSelect = () => {
-
+    handleDateSelect = (newDate) => {
+        this.setState({ date: newDate });
     };
 
     handleChangePerson = (newPerson) => {
@@ -43,7 +43,10 @@ export default class Reminder extends PureComponent {
                     />
                 </div>
                 <div className="reminder__calendar">
-                    <Calendar/>
+                    <Calendar
+                        onDateSelect={this.handleDateSelect}
+                        selected={date}
+                    />
                 </div>
                 <div className="reminder__submit-button-wrapper">
                     
