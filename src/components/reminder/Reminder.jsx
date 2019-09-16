@@ -14,6 +14,8 @@ export default class Reminder extends PureComponent {
             person: null,
             date: new Date()
         };
+
+        this.personFinder = React.createRef();
     }
 
     handleDateSelect = (newDate) => {
@@ -33,6 +35,10 @@ export default class Reminder extends PureComponent {
         chayns.intercom.sendMessageToPage({ text: `Hochzeitstag Reminder\n\nEhepartner: ${personName}\nDatum: ${dateString}` });
 
         chayns.dialog.alert(null, text.reminder.submitButton.success);
+
+        this.personFinder.current.clear();
+
+        this.setState({ person: null, date: new Date() });
     };
 
     render() {
@@ -47,6 +53,7 @@ export default class Reminder extends PureComponent {
                     <PersonFinder
                         placeholder={text.reminder.personFinder.placeholder}
                         onChange={this.handleChangePerson}
+                        ref={this.personFinder}
                     />
                 </div>
                 <div className="reminder__calendar">
