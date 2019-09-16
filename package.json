@@ -1,7 +1,7 @@
 {
-  "name": "masterclass-template",
+  "name": "live-coding-template",
   "version": "1.0.0",
-  "description": "Template for masterclass live coding session on pushcon",
+  "description": "Template for live coding session on pushcon",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./webpack/dev.babel.js",
@@ -56,7 +56,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.tobit.com:JWeise/masterclass-template.git"
+    "url": "git@github.com:TobitSoftware/live-coding-template.git"
   },
   "keywords": [
     "chayns",
@@ -64,10 +64,11 @@
     "es6",
     "exnext",
     "template",
-    "masterclass"
+    "live",
+    "coding"
   ],
   "bugs": {
-    "url": "https://gitlab.tobit.com/JWeise/masterclass-template/issues"
+    "url": "https://github.com/TobitSoftware/live-coding-template/issues"
   },
-  "homepage": "https://gitlab.tobit.com/JWeise/masterclass-template"
+  "homepage": "https://github.com/TobitSoftware/live-coding-template"
 }

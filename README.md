@@ -1,13 +1,13 @@
 [![license](https://img.shields.io/github/license/TobitSoftware/chayns-template-esnext-react.svg)]() [![GitHub pull requests](https://img.shields.io/github/issues-pr/TobitSoftware/chayns-template-esnext-react.svg)]() [![](https://img.shields.io/github/issues-pr-closed-raw/TobitSoftware/chayns-template-esnext-react.svg)]()
 
-# Masterclass Template
+# Live Coding Template
 This template will help you getting started with building tapps for your chayns site with React.
 First of all you have to make sure, that you have the latest version of [node.js][1] installed.
 
 ## Development
 1. Install all project dependencies with `npm i`
 2. Start your webpack-dev-server for debugging your project with `npm start`
-3. Open `https://pushcon.de/Masterclass` in your browser
+3. Open `https://digitalplayground.chayns.net/LiveCoding` in your browser
 4. Allow unsafe scripts in browser, because no ssl certificate is given in project
 5. Start development.
 
