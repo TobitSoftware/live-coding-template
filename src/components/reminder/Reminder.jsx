@@ -34,6 +34,9 @@ export default class Reminder extends PureComponent {
         return (
             <div className="reminder">
                 <div className="reminder__person-finder">
+                    <div className="reminder__person-finder__label">
+                        {text.reminder.personFinder.label}
+                    </div>
                     <PersonFinder
                         placeholder={text.reminder.personFinder.placeholder}
                     />

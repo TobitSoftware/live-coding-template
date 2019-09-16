@@ -6,7 +6,7 @@ export default {
     reminder: {
         personFinder: {
             placeholder: 'Person suchen',
-            label: ''
+            label: 'Ehepartner'
         },
         submitButton: {
             text: '',

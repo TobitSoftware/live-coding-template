@@ -5,6 +5,17 @@
 
     &__person-finder {
         margin-top: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__label {
+            margin-right: 24px;
+        }
+
+        div:nth-child(2) {
+            flex-grow: 1;
+        }
     }
 
     &__submit-button-wrapper {
