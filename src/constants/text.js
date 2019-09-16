@@ -10,7 +10,7 @@ export default {
         },
         submitButton: {
             text: 'Speichern',
-            success: ''
+            success: 'Dein Hochzeitstag wurde erfolgreich gespeichert.'
         }
     },
     footer: {

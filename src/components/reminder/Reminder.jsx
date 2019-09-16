@@ -25,7 +25,14 @@ export default class Reminder extends PureComponent {
     };
 
     handleSubmit = () => {
-        
+        const { person, date } = this.state;
+
+        const personName = `${person.firstName} ${person.lastName}`;
+        const dateString = new Date(date).toLocaleDateString().slice(0, -5);
+
+        chayns.intercom.sendMessageToPage({ text: `Hochzeitstag Reminder\n\nEhepartner: ${personName}\nDatum: ${dateString}` });
+
+        chayns.dialog.alert(null, text.reminder.submitButton.success);
     };
 
     render() {
@@ -49,7 +56,7 @@ export default class Reminder extends PureComponent {
                     />
                 </div>
                 <div className="reminder__submit-button-wrapper">
-                    <Button disabled={person === null}>
+                    <Button disabled={person === null} onClick={this.handleSubmit}>
                         {text.reminder.submitButton.text}
                     </Button>
                 </div>
