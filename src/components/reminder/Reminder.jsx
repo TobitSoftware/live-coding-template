@@ -20,8 +20,8 @@ export default class Reminder extends PureComponent {
 
     };
 
-    handleChangePerson = () => {
-
+    handleChangePerson = (newPerson) => {
+        this.setState({ person: newPerson });
     };
 
     handleSubmit = () => {
@@ -39,6 +39,7 @@ export default class Reminder extends PureComponent {
                     </div>
                     <PersonFinder
                         placeholder={text.reminder.personFinder.placeholder}
+                        onChange={this.handleChangePerson}
                     />
                 </div>
                 <div className="reminder__calendar">
