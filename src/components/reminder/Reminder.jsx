@@ -1,5 +1,7 @@
 import React, { PureComponent } from 'react';
 
+import { PersonFinder } from 'chayns-components';
+
 import text from '../../constants/text';
 
 import './reminder.scss';
@@ -32,7 +34,9 @@ export default class Reminder extends PureComponent {
         return (
             <div className="reminder">
                 <div className="reminder__person-finder">
-
+                    <PersonFinder
+                        placeholder={text.reminder.personFinder.placeholder}
+                    />
                 </div>
                 <div className="reminder__calendar">
 

@@ -5,7 +5,7 @@ export default {
     },
     reminder: {
         personFinder: {
-            placeholder: '',
+            placeholder: 'Person suchen',
             label: ''
         },
         submitButton: {
