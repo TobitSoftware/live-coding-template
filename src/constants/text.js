@@ -9,7 +9,7 @@ export default {
             label: 'Ehepartner'
         },
         submitButton: {
-            text: '',
+            text: 'Speichern',
             success: ''
         }
     },
