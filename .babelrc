@@ -1,0 +1,45 @@
+{
+    "plugins": [
+        "@babel/plugin-proposal-object-rest-spread",
+        ["@babel/plugin-proposal-class-properties", { "loose": true }],
+        "@babel/plugin-transform-runtime",
+        [
+            "transform-imports",
+            {
+                "chayns-components": {
+                    "transform": "../chayns-components/lib/utils/babel/resolveAbsoluteImport.js",
+                    "preventFullImport": true
+                  }
+            }
+        ]
+    ],
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "browsers": [
+                        ">1%",
+                        "last 4 versions",
+                        "Firefox ESR",
+                        "not ie < 10"
+                    ]
+                },
+                "modules": false
+            }
+        ],
+        "@babel/preset-react"
+    ],
+    "env": {
+        "production": {
+            "plugins": [
+                "transform-react-remove-prop-types"
+            ]
+        },
+        "development": {
+            "plugins": [
+                "react-hot-loader/babel"
+            ]
+        }
+    }
+}
