@@ -11,6 +11,9 @@ export default class Header extends PureComponent {
                 <h1>
                     {text.header.headline}
                 </h1>
+                <p>
+                    {text.header.intro}
+                </p>
             </div>
         );
     }

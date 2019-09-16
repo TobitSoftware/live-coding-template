@@ -1,7 +1,7 @@
 export default {
     header: {
         headline: 'Hoch­zeits­tag Reminder',
-        intro: ''
+        intro: 'Du hast euren Hochzeitstag schon einmal vergessen oder möchtest einfach nur zur Sicherheit daran erinnert werden? Dann ist der Hochzeitstag Reminder genau das richtige für Dich. Trage einfach das Datum und die Person ein und wir erinnern Dich an Deinen Hochzeitstag.'
     },
     reminder: {
         personFinder: {
