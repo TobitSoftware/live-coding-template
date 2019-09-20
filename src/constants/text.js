@@ -19,14 +19,14 @@ export default {
         question: {
             1: 'Wie starte ich das Projekt?',
             2: 'Gibt es eine Dokumentation zu den chayns-components?',
-            3: 'Wo kann ich die Texte bearbeiten?',
-            4: 'Wann wird der Inhalt meines Tapps aktualisiert?'
+            3: 'Wann wird der Inhalt meines Tapps aktualisiert?',
+            4: 'Was kann ich tun, wenn ich immer noch nicht weiter komme?'
         },
         answer: {
             1: 'Öffne das Terminal in Visual Studio Code mit "STRG + ö" oder über das Menü oben, gib den NPM Befehl "npm start" ein und bestätige diesen mit der ENTER Taste.',
             2: 'Ja, diese findest Du unter der folgenden URL: https://github.com/TobitSoftware/chayns-components',
-            3: 'Für die Texte gibt es eine "text.js" Datei. Du findest diese unter "src > constants".',
-            4: 'Der Inhalt deines Tapps wird bei laufendem Projekt (siehe erste Frage) automatisch aktualisiert, sobald Du eine Änderung im Code machst und diese per "STRG + S" speicherst. Das ganze funktioniert über das HotLoading von React.'
+            3: 'Der Inhalt deines Tapps wird bei laufendem Projekt (siehe erste Frage) automatisch aktualisiert, sobald Du eine Änderung im Code machst und diese per "STRG + S" speicherst. Das ganze funktioniert über das HotLoading von React und Webpack.',
+            4: 'Sprich\' einfach einen von unseren Kollegen an. Die helfen Dir gerne weiter.'
         }
     }
 };
