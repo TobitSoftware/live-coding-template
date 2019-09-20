@@ -16,5 +16,18 @@ First of all you have to make sure, that you have the latest version of [node.js
 ## Building
 You can build this project via `npm run build`.
 
+## Complete project
+You can find the complete project with the different steps in the `feature/complete` branch. An explanation of the steps will follow.
+
+## Software
+- SourceTree: https://www.sourcetreeapp.com/
+
+## Workshops
+- esNext: https://scrimba.com/g/gintrotoes6
+- React: https://scrimba.com/g/glearnreact
+
+## Design Guide
+https://design.chayns.net
+
  [1]: https://nodejs.org/en/
  [2]: https://github.com/TobitSoftware/chayns-guides/blob/master/TobitReactJsxStyleGuide.md
